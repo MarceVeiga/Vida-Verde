@@ -1,0 +1,691 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+
+
+/*----------------HEADER--------------*/
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+header nav {
+    background: hsla(127, 9%, 41%, 1);
+
+    background: linear-gradient(270deg, hsla(127, 9%, 41%, 1) 0%, hsla(134, 12%, 49%, 1) 31%, hsla(34, 15%, 78%, 1) 100%);
+
+    background: -moz-linear-gradient(270deg, hsla(127, 9%, 41%, 1) 0%, hsla(134, 12%, 49%, 1) 31%, hsla(34, 15%, 78%, 1) 100%);
+
+    background: -webkit-linear-gradient(270deg, hsla(127, 9%, 41%, 1) 0%, hsla(134, 12%, 49%, 1) 31%, hsla(34, 15%, 78%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#5F7161", endColorstr="#6D8B74", GradientType=1);
+}
+
+
+.collapse {
+    flex-direction: row-reverse;
+}
+
+/* -----Fin Header------- */
+
+
+
+
+
+
+
+/*----------------MAIN INDEX----------------*/
+
+main {
+    width: 100%;
+
+    background-image: url("../img/fondogeneralindex.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ----Grilla invisible con aplicaciones de flex-box dentro de cada contenedor--- */
+.grilla_general {
+
+    color: rgb(239, 234, 216);
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+
+    grid-template-rows: 20% 20% 60%;
+
+    grid-template-areas:
+        "h1h4 . redessoc"
+        ". parraf parraf"
+        "promo promo promo"
+    ;
+}
+
+.titulo {
+    grid-area: h1h4;
+    padding-left: 35px;
+}
+
+.redes {
+    grid-area: redessoc;
+}
+
+.parrafo {
+    grid-area: parraf;
+    display: flex;
+    justify-content: center;
+}
+
+.promos {
+    grid-area: promo;
+}
+
+.titulo h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Source Serif Pro', serif;
+    letter-spacing: 5px;
+    color: rgb(239, 234, 216);
+    text-align: left;
+}
+
+.titulo h4 {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(239, 234, 216);
+    text-align: left;
+}
+
+.parrafo p {
+
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 5%;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    text-align: justify;
+    color: rgb(239, 234, 216);
+    justify-content: left;
+}
+
+.redes {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(126, 174, 158, 0.484);
+    justify-self: end;
+}
+
+.promos {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+
+}
+
+.promos h2 {
+    color: rgb(239, 234, 216);
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 900;
+    text-align: left;
+    line-height: 15px;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.promos div {
+    width: 170px;
+    height: 350px;
+    margin: 5px 20px 0px 20px;
+    border: 2px outset rgb(182, 191, 191);
+    text-align: center;
+    background-color: rgb(114, 156, 142);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.promos div a {
+    height: fit-content;
+    text-decoration: none;
+    color: rgb(208, 201, 192);
+    background-color: rgb(109, 139, 116);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    padding: 3px;
+}
+
+.promos div h3 {
+    width: 175px;
+    height: fit-content;
+    color: rgb(208, 201, 192);
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 800;
+    line-height: 15px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.promos div h4 {
+    width: 130px;
+    height: fit-content;
+    text-align: center;
+    padding: 3px;
+    color: rgb(208, 201, 192);
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    line-height: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.promos div img {
+    width: 170px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+/*-----FIN MAIN INDEX-----*/
+
+
+
+
+/* -------MAIN SERVICIOS------- */
+.container_servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 2fr;
+    gap: 3px 0px;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+        "h1"
+        "cards"
+        "promoservicios";
+    width: 85%;
+} 
+
+.h1 {
+    justify-self: start;
+    align-self: start;
+    grid-area: h1;
+    color: rgb(208, 201, 192);
+}
+
+.cardservicios {
+    justify-self: stretch;
+    align-self: center;
+    grid-area: cards;
+}
+.cardservicios div{
+    
+}
+
+
+.promoservicios {
+    justify-self: center;
+    align-self: start;
+    grid-area: promoservicios;
+}
+.promoservicios h2{
+    justify-content: center;
+    width: 170px;
+    color: rgb(208, 201, 192);
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 800;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding-left: 5px;
+}
+.promoservicios div {
+    width: 170px;
+    height: 270px;
+    margin: 5px 20px 0px 20px;
+    border: 2px outset rgb(182, 191, 191);
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(114, 156, 142);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.promoservicios div img{
+        width: 170px;
+        height: 100px;
+        margin-bottom: 10px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+}
+
+.promoservicios div h3 {
+    height: fit-content;
+    justify-content: center;
+    color: rgb(208, 201, 192);
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 800;
+    line-height: 15px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.promoservicios div h4 {
+    width: 150px;
+    height: fit-content;
+    text-align:left;
+    padding: 5px;
+    color: rgb(208, 201, 192);
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    line-height: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* -------FIN MAIN SERVICIOS---------- */
+
+
+
+/*------------ MAIN BLOG ----------*/
+
+/* -----FIN MAIN BLOG----- */
+
+
+
+
+
+/*-------------MAIN NOSOTROS------------*/
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 15% 10% 30% 45%;
+    grid-auto-rows: 1fr;
+    gap: 0px 1%;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    justify-items: stretch;
+    align-items: flex-start;
+    grid-template-areas:
+        "h1 . ."
+        "foto titulo1 ."
+        "foto parrafo1 ."
+        ". imagen titulo2";
+    width: 100%;
+    padding-top: 5px;
+}
+
+.h1 {
+    color: rgb(239, 234, 216);
+    padding-left: 15%;
+    padding-top: 15px;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 900;
+    text-align: left;
+    line-height: 15px;
+    font-size: 30px;
+}
+
+.titulo1 {
+    justify-items: end;
+    align-items: flex-end;
+    grid-area: titulo1;
+    width: 100%;
+}
+
+.foto {
+    justify-self: end;
+    align-self: auto;
+    grid-area: foto;
+
+}
+
+.parrafo1 {
+
+    align-items: flex-start;
+    grid-area: parrafo1;
+    width: 100%;
+}
+
+.titulo2 {
+    justify-items: flex-start;
+    align-self: flex-start;
+    grid-area: titulo2;
+    width: 75%;
+}
+
+.imagen {
+    justify-self: end;
+    align-self: flex-start;
+    margin-top: 30px;
+    grid-area: imagen;
+    width: 150px;
+    height: 150px;
+}
+
+
+.foto img {
+    width: 220px;
+    height: 330px;
+    border: outset 5px rgb(204, 64, 64);
+
+}
+
+.titulo1 h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Lora', serif;
+    text-align: start;
+    color: rgb(239, 234, 216);
+    margin: 3px;
+}
+
+.parrafo1 p {
+    padding: 7px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Lora', serif;
+    text-align: start;
+    color: rgb(239, 234, 216);
+}
+
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    border: outset 5px rgb(204, 64, 64);
+}
+
+.titulo2 h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Lora', serif;
+    text-align: justify;
+    color: rgb(239, 234, 216);
+    margin: 3px;
+}
+
+.titulo2 p {
+    padding: 7px 7px 50px 7px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Lora', serif;
+    text-align: justify;
+    color: rgb(239, 234, 216);
+    margin-bottom: 120px;
+
+}
+
+/*----------------FIN MAIN NOSOTROS----------*/
+
+
+/* -------------MAIN CONTACTO-------- */
+.mt-5 {
+    color: rgb(239, 234, 216);
+}
+
+.icono_mail {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*------- FIN MAIN CONTACTO------ */
+
+
+
+/* --------FOOTER------------ */
+/* Tuve un problema al escalar las imagenes del banner para el carousel, o quedaban gigantes con w-100 o muy chicas con cualquier otro tamaño menor. No pude encontrar el motivo. Tambien me hubiese gustado centrarlas, pero no tengo idea de cómo ni si se puede */
+
+
+
+
+/*--------------MEDIA QUERIES---------*/
+/* Header */
+
+@media screen and (max-width:821px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:680px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+}
+
+/* Main - INDEX */
+@media screen and (max-width:1040px) {
+    .redes {
+        position: sticky;
+        left: 0px;
+        bottom: 0px;
+    }
+}
+
+
+
+@media screen and (max-width:855px) {
+
+    .parrafo {
+        grid-column: span 3;
+        margin-inline: 20px;
+    }
+
+    .promos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promos div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: min-content;
+        height: 350px;
+
+    }
+
+    .promos div a {
+        margin-inline: 5px;
+    }
+}
+
+
+@media screen and (max-width:685px) {
+    .parrafo p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .titulo h4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .redes div a img {
+        width: 30%;
+        height: 30%;
+    }
+
+
+}
+
+@media screen and (max-width:560px) {
+    .promos {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .promos div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: min-content;
+        height: auto;
+
+    }
+
+    .promos div a {
+        margin-inline: 5px;
+    }
+
+    .promos div img {
+        width: 40%;
+        height: 40%;
+        margin-bottom: 5px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .grilla_general {
+        grid-template-rows: 13% 15% 72%;
+
+        grid-template-areas:
+            "h1h4 . redessoc"
+            "parraf parraf parraf"
+            "promo promo promo";
+    }
+
+    .parrafo p {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .promos h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+
+}
+
+
+/* -------Main - NOSOTROS */
+@media (max-width:1650px) and (min-width:300px) {
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .imagen {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .titulo1 h2 {
+        font-size: 26px;
+        justify-self: center;
+        margin-left: 30px;
+    }
+
+    .titulo2 h2 {
+        font-size: 26px;
+        margin-left: 30px;
+    }
+
+    .parrafo1 p {
+        font-size: 18px;
+        margin: 30px;
+    }
+
+    .parrafo2 p {
+        font-size: 18px;
+        margin: 30px;
+    }
+}
+
+/* -----------PSEUDOELEMENTOS---------- */
+
+parrafo1::first-letter {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.titulo2 p::first-letter {
+    font-size: 32;
+    font-weight: 600;
+}
+
+/* -------------CONTACTO---------------- */
+@media (max-width: 1000px) and (min-width: 350px) {}
+
+/* -------- GRADIENTES Y ANIMACIONES------- */
+
+
+/* No pude lograr que se escalara el botón "Detalles" */
+.promos div {
+    transition: 1s;
+}
+
+.promos div:hover {
+    transform: scale(0.9);
+}
+
+
+.imagen img {
+    transition: 1.5s;
+}
+
+.imagen img:hover {
+    transform: rotateY(45deg);
+}
+
+.foto img {
+    transition: 1.7s
+}
+
+.foto img:hover {
+    transform: rotateY(45deg);
+}
+
+/* --------FOOTER------- */
+footer {
+    background: hsla(127, 9%, 41%, 1);
+
+    background: linear-gradient(90deg, hsla(127, 9%, 41%, 1) 0%, hsla(134, 12%, 49%, 1) 31%, hsla(34, 15%, 78%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(127, 9%, 41%, 1) 0%, hsla(134, 12%, 49%, 1) 31%, hsla(34, 15%, 78%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(127, 9%, 41%, 1) 0%, hsla(134, 12%, 49%, 1) 31%, hsla(34, 15%, 78%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#5F7161", endColorstr="#6D8B74", GradientType=1);
+}
