@@ -489,7 +489,13 @@ main {
     }
 }
 
+/* media querie realizado con mobile first a 1024px*/
 
+@media screen and (min-width:1024px) {
+    .promos {
+        margin-top: 50px;
+    }
+}
 
 @media screen and (max-width:855px) {
 
