@@ -211,43 +211,66 @@ main {
 
 /* -------MAIN SERVICIOS------- */
 .container_servicios {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 2fr;
-    gap: 3px 0px;
-    grid-auto-flow: row;
-    justify-content: space-evenly;
-    justify-items: stretch;
-    align-items: stretch;
-    grid-template-areas:
-        "h1"
-        "cards"
-        "promoservicios";
-    width: 85%;
-} 
-
-.h1 {
-    justify-self: start;
-    align-self: start;
-    grid-area: h1;
-    color: rgb(208, 201, 192);
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 5% repeat(2, 1fr); 
+    gap: 2% 0px; 
+    grid-template-areas: 
+    "h1"
+    "cards"
+    "promoservicios"; 
+    justify-content: stretch; 
+    align-content: center; 
+    justify-items: stretch; 
+    align-items: stretch; 
+    width: 100%; 
 }
-
-.cardservicios {
-    justify-self: stretch;
-    align-self: center;
+.h1_servicios { 
+    color: rgb(239, 234, 216);
+    font-weight: 900;
+    font-size: 40px;
+    font-family: 'Source Serif Pro', serif;
+    justify-self: center; 
+    align-self: center; 
+    grid-area: h1;
+    }
+.cardservicios  {
+    justify-self: center; 
+    align-self: start; 
     grid-area: cards;
+    width: 100%; 
+}
+.cardservicios div img {
+    height: fit-content;
+    width: fit-content;
 }
 .cardservicios div{
-    
+    color: rgb(208, 201, 192);
+    font-family: 'Source Serif Pro', serif;
+    width: 160px;
+    height: 280px;
+    background-color: rgb(114, 156, 142);
+    justify-content: center;
+    text-align: center;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 3%;
+    }
+.cardservicios div h3{
+    height: fit-content;
+    font-weight: 800;
+    font-size: 18px;
 }
-
-
+.cardservicios div h4{
+    height: fit-content;
+    font-weight: 600;
+    font-size: 16px;
+}
 .promoservicios {
-    justify-self: center;
-    align-self: start;
-    grid-area: promoservicios;
-}
+    justify-self: center; 
+    align-self: start; 
+    grid-area: promoservicios; 
+  }
 .promoservicios h2{
     justify-content: center;
     width: 170px;
@@ -638,6 +661,35 @@ main {
         margin: 30px;
     }
 }
+
+/* ------------------MAIN - SERVICIOS -------------*/
+@media screen and (min-width:420px) {
+    .cardservicios {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between
+    }
+    .promoservicios {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between
+    }
+}
+@media screen and (max-width:420px)  {
+    .cardservicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .promoservicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 /* -----------PSEUDOELEMENTOS---------- */
 
