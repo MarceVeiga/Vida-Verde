@@ -1,0 +1,448 @@
+@import "resets";
+@import "header";
+@import "back_img_main";
+@import "variables";
+@import "footer";
+@import "media_queries";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* ---- Main Index ---*/
+/* ----Grilla invisible con aplicaciones de flex-box dentro de cada contenedor--- */
+.grilla_general {
+
+    color: rgb(239, 234, 216);
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+
+    grid-template-rows: 20% 20% 60%;
+
+    grid-template-areas:
+        "h1h4 . redessoc"
+        ". parraf parraf"
+        "promo promo promo"
+    ;
+
+    .titulo  {
+        grid-area: h1h4;
+        padding-left: 35px;
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            font-style: normal;
+            font-family: $font_p_family;
+            letter-spacing: 5px;
+            color: $text_color;
+            text-align: left;
+        }
+        h4 {
+            font-size: 30px;
+            font-weight: 700;
+            font-style: normal;
+            font-family: $font_p_family;
+            color: $text_color;
+            text-align: left;
+        }
+    }
+    .redes {
+        grid-area: redessoc;
+        width: fit-content;
+        height: fit-content;
+        background-color: rgba(126, 174, 158, 0.484);
+        justify-self: end;
+    }
+
+    .parrafo {
+        grid-area: parraf;
+        display: flex;
+        justify-content: center;
+        p {
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right: 5%;
+            font-size: 26px;
+            font-weight: 400;
+            font-style: italic;
+            font-family: 'Lora', serif;
+            text-align: justify;
+            color: $text_color;
+            justify-content: left;
+        }
+
+    }
+    .promos {
+        grid-area: promo;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 15px;
+        h2 {
+            color: rgb(239, 234, 216);
+            font-family: 'Source Serif Pro', serif;
+            font-weight: 900;
+            text-align: left;
+            line-height: 15px;
+            font-size: 30px;
+            margin-bottom: 40px;
+            margin-left: 40px;
+        }
+        div {
+            width: 170px;
+            height: 350px;
+            margin: 5px 20px 0px 20px;
+            border: 2px outset rgb(182, 191, 191);
+            text-align: center;
+            background-color: rgb(114, 156, 142);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            & :hover {
+                transform: scale(0.9);
+            }
+            a {
+                height: fit-content;
+                text-decoration: none;
+                color: rgb(208, 201, 192);
+                background-color: rgb(109, 139, 116);
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-style: normal;
+                font-size: 15px;
+                padding: 3px;
+            }
+            h3 {
+                width: 175px;
+                height: fit-content;
+                color: rgb(208, 201, 192);
+                font-family: 'Source Serif Pro', serif;
+                font-weight: 800;
+                line-height: 15px;
+                font-size: 18px;
+                margin-top: 5px;
+            }
+            h4 {
+                width: 130px;
+                height: fit-content;
+                text-align: center;
+                padding: 3px;
+                color: rgb(208, 201, 192);
+                font-family: 'Source Serif Pro', serif;
+                font-weight: 600;
+                line-height: 12px;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+            img {
+                width: 170px;
+                height: 200px;
+                margin-bottom: 10px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+        }
+
+    }
+}
+/*-----Main Nosotros-------*/
+.nosotros {
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 15% 10% 30% 45%;
+    grid-auto-rows: 1fr;
+    gap: 0px 1%;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    justify-items: stretch;
+    align-items: flex-start;
+    grid-template-areas:
+        "h1 . ."
+        "foto titulo1 ."
+        "foto parrafo1 ."
+        ". imagen titulo2";
+    width: 100%;
+    padding-top: 5px;
+
+    .h1 {
+        color: $text_color;
+        padding-left: 15%;
+        padding-top: 15px;
+        font-family: $font_p_family;
+        font-weight: 900;
+        text-align: left;
+        line-height: 15px;
+        font-size: 30px;
+    }
+    .titulo1 {
+        justify-items: end;
+        align-items: flex-end;
+        grid-area: titulo1;
+        width: 100%;
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            font-style: normal;
+            font-family: 'Lora', serif;
+            text-align: start;
+            color: $text_color;
+            margin: 3px;
+        }
+    }
+    .foto {
+    justify-self: end;
+    align-self: auto;
+    grid-area: foto;
+        img {
+            width: 220px;
+            height: 330px;
+            border: outset 5px rgb(204, 64, 64);
+            transition: 1.7s;
+            &:hover{
+                transform: rotateY(45deg);
+            }
+        }
+    }
+    .parrafo1 {
+        align-items: flex-start;
+        grid-area: parrafo1;
+        width: 100%;
+        & ::first-letter {
+            font-size: 32px;
+            font-weight: 600;
+        }
+        p {
+            padding: 7px;
+            font-size: 20px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Lora', serif;
+            text-align: start;
+            color: $text_color;
+        }
+    }
+    .imagen {
+        justify-self: end;
+        align-self: flex-start;
+        margin-top: 30px;
+        grid-area: imagen;
+        width: 150px;
+        height: 150px;
+        img {
+            width: 100%;
+            height: 100%;
+            border: outset 5px rgb(204, 64, 64);
+            transition: 1.5s;
+            
+            &:hover {
+                transform: rotateY(45deg);
+            }
+        }
+    }
+    .titulo2 {
+        justify-items: flex-start;
+        align-self: flex-start;
+        grid-area: titulo2;
+        width: 75%;
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            font-style: normal;
+            font-family: 'Lora', serif;
+            text-align: justify;
+            color: $text_color;
+            margin: 3px;
+        }
+        p {
+            padding: 7px 7px 50px 7px;
+            font-size: 20px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Lora', serif;
+            text-align: justify;
+            color: $text_color;
+            margin-bottom: 120px;
+            & ::first-letter {
+                font-size: 32;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/*----------Main Servicios-----------*/
+.container_servicios {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 5% repeat(2, 1fr); 
+    gap: 2% 0px; 
+    grid-template-areas: 
+    "h1"
+    "cards"
+    "promoservicios"; 
+    justify-content: stretch; 
+    align-content: center; 
+    justify-items: stretch; 
+    align-items: stretch; 
+    width: 100%;
+    .h1_servicios { 
+        color: $text_color;
+        font-weight: 900;
+        font-size: 40px;
+        font-family: $font_p_family;
+        justify-self: center; 
+        align-self: center; 
+        grid-area: h1;
+    }
+    .cardservicios {
+        justify-self: center; 
+        align-self: start; 
+        grid-area: cards;
+        width: 100%;
+        div{
+            color: $text_color2;
+            font-family: $font_p_family;
+            width: 160px;
+            height: 280px;
+            background-color: rgb(114, 156, 142);
+            justify-content: center;
+            text-align: center;
+            padding: 7px;
+            border-radius: 10px;
+            margin: 3%;
+            }
+            h3{
+                height: fit-content;
+                font-weight: 800;
+                font-size: 18px;
+            }
+            h4{
+                height: fit-content;
+                font-weight: 600;
+                font-size: 16px;
+            }
+            img {
+                height: fit-content;
+                width: fit-content;
+            }
+    }
+    .promoservicios {
+        justify-self: center; 
+        align-self: start; 
+        grid-area: promoservicios;
+        h2{
+            justify-content: center;
+            width: 170px;
+            color: $text_color2;
+            font-family: $font_p_family;
+            font-weight: 800;
+            font-size: 26px;
+            margin-top: 5px;
+            margin-left: 20px;
+            padding-left: 5px;
+        }
+        div {
+            width: 170px;
+            height: 270px;
+            margin: 5px 20px 0px 20px;
+            border: 2px outset rgb(182, 191, 191);
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(114, 156, 142);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            img{
+                width: 170px;
+                height: 100px;
+                margin-bottom: 10px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+            h3 {
+                height: fit-content;
+                justify-content: center;
+                color: $text_color2;
+                font-family: $font_p_family;
+                font-weight: 800;
+                line-height: 15px;
+                font-size: 16px;
+                margin-top: 5px;
+            }
+            h4 {
+                width: 150px;
+                height: fit-content;
+                text-align:left;
+                padding: 5px;
+                color: $text_color2;
+                font-family: $font_p_family;
+                font-weight: 600;
+                line-height: 12px;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+/*----------Main Blog----------*/
+.container_blog {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8% 1fr 8% 1.5fr;
+    gap: 1px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "titulo_blog"
+    "icono"
+    "titulo_video"
+    "video";
+    .titulo_blog {
+        color: $text_color;
+        font-weight: 800;
+        font-size: 40px;
+        font-family: $font_p_family;
+        justify-self: center; 
+        align-self: center; 
+        justify-self: center;
+        padding-top: 15px;
+        grid-area: titulo_blog;
+    }
+    .icono {
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 20px;
+        grid-area: icono;
+    }
+    .titulo_video {
+        color:$text_color;
+        font-weight: 700;
+        font-size: 30px;
+        font-family: $font_p_family;
+        justify-self: center; 
+        align-self: center;
+        justify-self: center;
+        grid-area: titulo_video;
+    }
+    .video {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow:hidden;
+        grid-area: video;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: ridge 8px rgb(165, 163, 163);
+        }
+    }
+}
+
+/*------Main Contacto------*/
+.icono_mail {
+    width: 200px;
+    height: 200px;
+}
+.mt-5 {
+    color: $text_color;
+}
