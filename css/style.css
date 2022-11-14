@@ -236,8 +236,9 @@ footer {
       text-align: center;
       background-color: #729c8e;
       border-top-left-radius: 15px;
-      border-top-right-radius: 15px; }
-      .grilla_general .promos div :hover {
+      border-top-right-radius: 15px;
+      transition: 1s; }
+      .grilla_general .promos div:hover {
         transform: scale(0.9); }
       .grilla_general .promos div a {
         height: fit-content;

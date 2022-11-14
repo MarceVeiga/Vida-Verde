@@ -97,7 +97,8 @@
             background-color: rgb(114, 156, 142);
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
-            & :hover {
+            transition: 1s;
+            &:hover {
                 transform: scale(0.9);
             }
             a {
