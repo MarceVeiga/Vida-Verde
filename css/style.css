@@ -27,144 +27,6 @@ footer {
   background: #6d8b74;
   background: linear-gradient(180deg, #6d8b74 0%, #5f7161 51%); }
 
-/* Header */
-@media screen and (max-width: 821px) {
-  header {
-    flex-direction: column; } }
-
-@media screen and (max-width: 680px) {
-  header nav ul {
-    flex-direction: column; } }
-
-/* Main - INDEX */
-@media screen and (max-width: 1040px) {
-  .redes {
-    position: sticky;
-    left: 0px;
-    bottom: 0px; } }
-
-/* media querie realizado con mobile first a 1024px*/
-@media screen and (min-width: 1024px) {
-  .promos {
-    margin-top: 50px; } }
-
-@media screen and (max-width: 855px) {
-  .parrafo {
-    grid-column: span 3;
-    margin-inline: 20px; }
-  .promos {
-    flex-direction: column;
-    align-items: center; }
-    .promos div {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      width: min-content;
-      height: 350px; }
-    .promos a {
-      margin-inline: 5px; } }
-
-@media screen and (max-width: 685px) {
-  .parrafo p {
-    font-size: 18px;
-    font-weight: 300; }
-  .titulo h4 {
-    display: none; } }
-
-@media screen and (max-width: 600px) {
-  .redes div a img {
-    width: 30%;
-    height: 30%; } }
-
-@media screen and (max-width: 560px) {
-  .promos {
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap; }
-    .promos div {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      width: min-content;
-      height: auto; }
-      .promos div a {
-        margin-inline: 5px; }
-      .promos div img {
-        width: 40%;
-        height: 40%;
-        margin-bottom: 5px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px; } }
-
-@media screen and (max-width: 440px) {
-  .grilla_general {
-    grid-template-rows: 13% 15% 72%;
-    grid-template-areas: "h1h4 . redessoc" "parraf parraf parraf" "promo promo promo"; }
-    .grilla_general .parrafo p {
-      font-size: 15px;
-      margin-top: 5px;
-      margin-bottom: 10px; }
-    .grilla_general .promos h2 {
-      margin-top: 10px;
-      margin-bottom: 5px; } }
-
-/* -------Main - NOSOTROS */
-@media (max-width: 1650px) and (min-width: 300px) {
-  .nosotros {
-    display: flex;
-    flex-direction: column; }
-    .nosotros .foto {
-      justify-self: center;
-      align-self: center; }
-    .nosotros .imagen {
-      justify-self: center;
-      align-self: center; }
-    .nosotros .titulo1 h2 {
-      font-size: 26px;
-      justify-self: center;
-      margin-left: 30px; }
-    .nosotros .titulo2 h2 {
-      font-size: 26px;
-      margin-left: 30px; }
-    .nosotros .parrafo1 p {
-      font-size: 18px;
-      margin: 30px; }
-    .nosotros .parrafo2 p {
-      font-size: 18px;
-      margin: 30px; } }
-
-/* ------------------MAIN - SERVICIOS -------------*/
-@media screen and (min-width: 420px) {
-  .cardservicios {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-  .promoservicios {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; } }
-
-@media screen and (max-width: 420px) {
-  .cardservicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .promoservicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center; } }
-
-/* -------------------- MAIN BLOG ---------------*/
-@media screen and (max-width: 600px) {
-  .container_blog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; } }
-
 /* ---- Main Index ---*/
 /* ----Grilla invisible con aplicaciones de flex-box dentro de cada contenedor--- */
 .grilla_general {
@@ -269,7 +131,7 @@ footer {
         font-weight: 600;
         line-height: 12px;
         font-size: 16px;
-        margin-top: 10px; }
+        margin: 15px; }
       .grilla_general .promos div img {
         width: 170px;
         height: 200px;
@@ -530,3 +392,159 @@ footer {
 
 .mt-5 {
   color: #efead8; }
+
+/* Header */
+@media screen and (max-width: 821px) {
+  header {
+    flex-direction: column; } }
+
+@media screen and (max-width: 680px) {
+  header nav ul {
+    flex-direction: column; } }
+
+/* Main - INDEX */
+@media screen and (max-width: 1040px) {
+  .redes {
+    position: sticky;
+    left: 0px;
+    bottom: 0px; } }
+
+/* media querie realizado con mobile first a 1024px*/
+@media screen and (min-width: 1024px) {
+  .parrafo p {
+    align-items: flex-start;
+    font-size: 20px;
+    margin-bottom: 50%; }
+  .promos {
+    margin-top: 50px;
+    align-items: center; } }
+
+@media screen and (max-width: 855px) {
+  .parrafo {
+    grid-column: span 3;
+    margin-inline: 20px; }
+  .promos {
+    flex-direction: column;
+    align-items: center; }
+    .promos div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: min-content;
+      height: 350px; }
+      .promos div a {
+        margin-inline: 5px; } }
+
+@media screen and (max-width: 685px) {
+  .parrafo p {
+    font-size: 18px;
+    font-weight: 300; }
+  .titulo h4 {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  .redes div a img {
+    width: 30%;
+    height: 30%; } }
+
+@media screen and (max-width: 560px) {
+  .grilla_general {
+    grid-template-rows: 13% 15% 72%;
+    grid-template-areas: "h1h4 . redessoc" "parraf parraf parraf" "promo promo promo"; }
+    .grilla_general .parrafo p {
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 10px; }
+    .grilla_general .promos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .grilla_general .promos div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: min-content;
+        height: auto; }
+        .grilla_general .promos div a {
+          margin-inline: 5px; }
+        .grilla_general .promos div img {
+          width: 40%;
+          height: 40%;
+          margin-bottom: 5px;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px; } }
+
+@media screen and (max-width: 440px) {
+  .grilla_general {
+    grid-template-rows: 13% 15% 72%;
+    grid-template-areas: "h1h4 . redessoc" "parraf parraf parraf" "promo promo promo"; }
+    .grilla_general .parrafo p {
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 10px; }
+    .grilla_general .promos h2 {
+      margin-top: 10px;
+      margin-bottom: 5px; } }
+
+/* -------Main - NOSOTROS */
+@media (max-width: 1650px) and (min-width: 300px) {
+  .nosotros {
+    display: flex;
+    flex-direction: column; }
+    .nosotros .foto {
+      justify-self: center;
+      align-self: center; }
+    .nosotros .imagen {
+      justify-self: center;
+      align-self: center; }
+    .nosotros .titulo1 h2 {
+      font-size: 26px;
+      justify-self: center;
+      margin-left: 30px; }
+    .nosotros .titulo2 h2 {
+      font-size: 26px;
+      margin-left: 50px; }
+    .nosotros .titulo2 p {
+      font-size: 18px;
+      margin: 30px;
+      align-items: center; }
+    .nosotros .parrafo1 p {
+      font-size: 18px;
+      margin: 30px; }
+    .nosotros p {
+      font-size: 18px;
+      margin: 30px;
+      padding: 50px; } }
+
+/* ------------------MAIN - SERVICIOS -------------*/
+@media screen and (min-width: 420px) {
+  .cardservicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .promoservicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+@media screen and (max-width: 420px) {
+  .cardservicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .promoservicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+/* -------------------- MAIN BLOG ---------------*/
+@media screen and (max-width: 600px) {
+  .container_blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }
