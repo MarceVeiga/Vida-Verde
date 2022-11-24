@@ -406,7 +406,7 @@
     }
     .titulo_video {
         @include imagenes (center, center, titulo_video)
-        color:$text_color;
+        color: $text_color;
         font-weight: 700;
         font-size: 30px;
         font-family: $font_p_family;
