@@ -1,0 +1,5 @@
+@mixin imagenes ($justify, $align, $grid) {
+    justify-self: $justify;
+    align-self: $align;
+    grid-area: $grid;    
+}

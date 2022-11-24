@@ -3,6 +3,7 @@
 @import "back_img_main";
 @import "variables";
 @import "footer";
+@import "mixins";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
@@ -189,10 +190,8 @@
         }
     }
     .foto {
-    justify-self: end;
-    align-self: auto;
-    grid-area: foto;
-        img {
+        @include imagenes (end, auto, foto)
+            img {
             width: 220px;
             height: 330px;
             border: outset 5px rgb(204, 64, 64);
@@ -221,10 +220,8 @@
         }
     }
     .imagen {
-        justify-self: end;
-        align-self: flex-start;
+        @include imagenes (end, flex-start, imagen)
         margin-top: 30px;
-        grid-area: imagen;
         width: 150px;
         height: 150px;
         img {
@@ -326,9 +323,7 @@
             }
     }
     .promoservicios {
-        justify-self: center; 
-        align-self: start; 
-        grid-area: promoservicios;
+        @include imagenes (center, start, promoservicios)
         h2{
             justify-content: center;
             width: 170px;
@@ -406,20 +401,15 @@
         grid-area: titulo_blog;
     }
     .icono {
-        justify-self: center;
-        align-self: center;
+        @include imagenes (center, center, icono)
         margin-bottom: 20px;
-        grid-area: icono;
     }
     .titulo_video {
+        @include imagenes (center, center, titulo_video)
         color:$text_color;
         font-weight: 700;
         font-size: 30px;
         font-family: $font_p_family;
-        justify-self: center; 
-        align-self: center;
-        justify-self: center;
-        grid-area: titulo_video;
     }
     .video {
         position: relative;

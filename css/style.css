@@ -204,8 +204,8 @@ footer {
   .nosotros .imagen {
     justify-self: end;
     align-self: flex-start;
-    margin-top: 30px;
     grid-area: imagen;
+    margin-top: 30px;
     width: 150px;
     height: 150px; }
     .nosotros .imagen img {
@@ -360,17 +360,16 @@ footer {
   .container_blog .icono {
     justify-self: center;
     align-self: center;
-    margin-bottom: 20px;
-    grid-area: icono; }
+    grid-area: icono;
+    margin-bottom: 20px; }
   .container_blog .titulo_video {
+    justify-self: center;
+    align-self: center;
+    grid-area: titulo_video;
     color: #efead8;
     font-weight: 700;
     font-size: 30px;
-    font-family: "Source Serif Pro", serif;
-    justify-self: center;
-    align-self: center;
-    justify-self: center;
-    grid-area: titulo_video; }
+    font-family: "Source Serif Pro", serif; }
   .container_blog .video {
     position: relative;
     padding-bottom: 56.25%;
